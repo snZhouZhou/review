@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //将一个数组中的值从小到大排列
+    var arr = [65, 97, 76, 13, 27, 49, 58];
+    var inner = 0;
+    for (var i = 0; i < arr.length - 1; i++) {
+        for (var j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+            inner++;
+        }
+    }
+    console.log(arr);
+    console.log(inner);
+
+
+</script>
+</body>
+</html>

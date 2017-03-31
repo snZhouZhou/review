@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*//Number()什么类型的值都可以转换成数值
+    /!*console.log(Number(true));//1
+     console.log(Number(false));//0
+     console.log(Number(""));//0
+     console.log(Number(null));//0
+     console.log(Number(undefined));//NaN*!/
+    //我们将来经常会 把字符串转换成 数值
+    console.log(Number(""));//0
+    console.log(Number("1"));//1
+    console.log(Number("1.1"));//1.1
+    //Number如果遇到符合数值规则的字符串 会把数字从字符串里取出来 转换成数值
+    //console.log(Number("100px"));//NaN 只要遇到自己不认识的 就NaN
+    console.log(parseInt("100px"));//如果遇到认识的 就转化 遇到不认识的就忽略
+    console.log(parseInt("1.1px"));//要求就是转成整数 所以小数会忽略
+    console.log(parseFloat("1.1px"));//要求就是转成整数 所以小数会忽略
+    console.log(parseFloat("1.1.1px"));//遇到不认识的就忽略*/
+    //隐式转换
+    var str = "123";//只要参数算数运算就可以转换成数值
+    //console.log(str + 0);//加号 不行 因为加号如果遇到字符串是做拼接
+    console.log(str - 0);//-*/%都可以
+    console.log(str * 1);//-*/%都可以
+    console.log(str / 1);//-*/%都可以
+    console.log(str % Infinity);//-*/%都可以
+    console.log(+str);//正号 +1 +123
+
+
+</script>
+</body>
+</html>

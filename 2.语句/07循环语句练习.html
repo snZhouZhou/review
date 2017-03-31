@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //打印输出5次100
+    /*for (var i = 1; i <= 5; i++) {
+     console.log(100);
+     }*/
+    //打印输出1-100这些数字（包括100）
+    /*for (var i = 1; i <= 100; i++) {
+     console.log(i);
+     }*/
+    //打印输出1-100的和、平均值
+    var sum = 0;//记录和
+    for (var i = 1; i <= 100; i++) {
+        //sum = sum + i;
+        sum += i;
+    }
+    //console.log(sum);
+    //console.log(sum / 100);
+    //console.log(sum / (i - 1));
+    //console.log(sum / --i);
+
+    //打印输出1到100之间的数的乘积（包括100）
+    /*var pro = 1;
+     for (var i = 1; i <= 100; i++) {
+     //pro = pro * i;
+     pro *= i;
+     }
+     console.log(pro);*/
+    //计算1到100之间所有不能被3整除的整数的和
+    /*var sum = 0;
+     for (var i = 1; i <= 100; i++) {
+     if (i % 3 !== 0) {//不能被3整除
+     //sum = sum + i;
+     sum += i;
+     }
+     }
+     console.log(sum);*/
+
+    //计算1到1000之间所有不能被7整除的整数的和
+    /*var sum = 0;
+     for (var i = 1; i <= 1000; i++) {
+     if (i % 7 !== 0) {//不能被7整除的整数
+     //sum = sum + i;
+     sum += i;
+     }
+     }
+     console.log(sum);*/
+    //求1到100之间所有偶数(even)的和
+    /*var sum = 0;
+     for (var i = 1; i <= 100; i++) {
+     if (i % 2 === 0) {//能被2整除 是偶数
+     sum += i;
+     }
+     }
+     console.log(sum);*/
+
+    //求1到100之间所有奇数(odd)的和
+    /*var sum = 0;
+     for (var i = 1; i <= 100; i++) {
+     if (i % 2 !== 0) {//奇数
+     sum += i;
+     }
+     }
+     console.log(sum);*/
+    //同时将1到100之间所有奇数和和偶数和分别求出
+    var sumEven = 0;//记录偶数的和
+    var sumOdd = 0;//记录奇数的和
+    for (var i = 1; i <= 100; i++) {
+        if (i % 2 === 0) {//偶数
+            sumEven += i;
+        } else {
+            //奇数
+            sumOdd += i;
+        }
+    }
+    console.log(sumEven);
+    console.log(sumOdd);
+</script>
+</body>
+</html>

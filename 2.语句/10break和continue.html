@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //求1到100之间不能被7整除的整数的和（continue）
+    /*var sum = 0;
+     for (var i = 1; i <= 100; i++) {
+     if (i % 7 === 0) {
+     continue;
+     }
+     sum += i;
+     }
+     console.log(sum);*/
+    //求200-300之间所有的奇数的和(continue)
+    /*var sum = 0;
+     for (var i = 200; i <= 300; i++) {
+     if (i % 2 === 0) {
+     continue;
+     }
+     sum += i;
+     }
+     console.log(sum);*/
+    //求200-300之间第一个能被7整除的数(break)
+    /*for (var i = 200; i <= 300; i++) {
+     if (i % 7 === 0) {
+     console.log(i);
+     break;
+     }
+     }*/
+    //求1到100之间所有不能被3整除的整数的第一个大于2000的和(continue和break)
+    /*var sum = 0;
+     for (var i = 1; i <= 100; i++) {
+     if (i % 3 === 0) {
+     continue;
+     }
+     sum += i;
+     if (sum > 2000) {
+     console.log(sum);
+     break;
+     }
+     }*/
+
+    //循环输出询问"你爱我吗？选择y/n"若输入为n则一直询问 若输入为y则打印"我也是"并跳出（break）
+    //prompt提示框
+    while (true) {
+        var msg = prompt("你爱我吗？选择y/n");
+        if (msg === "y") {
+            console.log("我也是，我也很爱我自己");
+            break;
+        }
+    }
+
+</script>
+</body>
+</html>

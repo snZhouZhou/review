@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //将一个数组中的值从小到大排列
+    var arr = [1, 13, 27, 49, 58];
+    var inner = 0;
+    var outer = 0;
+    for (var i = 0; i < arr.length - 1; i++) {
+        //var wocai = "我猜我这一次排列的是一个已经排好的数组";
+        var flag = true;//假设这次排列的是一个已经排好的数组
+        for (var j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                //wocai = "猜错了";
+                flag = false;
+            }
+            inner++;
+        }
+        outer++;
+        /*if (wocai !== "猜错了") {
+         break;
+         }*/
+        if (flag) {
+            break;
+        }
+    }
+    console.log(arr);
+    console.log(inner);
+    console.log(outer);
+
+
+</script>
+</body>
+</html>

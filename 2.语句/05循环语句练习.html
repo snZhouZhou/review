@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //求1到100之间整数的和（while）
+    /*var i = 1;
+     var sum = 0;
+     while (i <= 100) {
+     sum += i;
+     i++;
+     }*/
+    //console.log(sum);
+    //求1到100之间整数的和（dowhile）
+    /*var i = 1;
+     var sum = 0;
+     do {
+     sum += i;
+     i++;
+     } while (i <= 100);
+     console.log(sum);*/
+
+    //验证帐号和密码，如果输入错误则提示重新输入
+    //prompt提示框
+    do {
+        var userName = prompt("请输入帐号");
+        var password = prompt("请输入密码");
+    } while (userName !== "admin" || password !== "888888");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //var bool = true;
+    //var bool = True;//严格区分大小写
+    //var bool2 = false;
+
+    //绝大部分的值 转换成布尔值都是true
+    console.log(Boolean(""));
+    console.log(Boolean(0));
+    console.log(Boolean(NaN));
+    console.log(Boolean(null));
+    console.log(Boolean(undefined));
+    //字符串中的空字符串 数值中的0和NaN null和undefined 转化成布尔值是false
+    console.log(Boolean("0"));//true
+    console.log(Boolean("false"));//true
+
+    //流程控制语句 中 会将其他类型的值转换成布尔值
+    var message = "hello";
+    if (message) {
+        alert(message + " world");
+    }
+
+
+</script>
+</body>
+</html>

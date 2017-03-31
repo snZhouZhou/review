@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //&& 要求比较严格 必须两个都是true才是true
+    console.log(true && true);//true
+    console.log(true && false);//false
+    console.log(false && true);//false
+    console.log(false && false);//false
+
+    //&&运算 必须两个都是true才是true 如果前面是false 就没必要往后看了 直接返回前面的
+    //&&运算 必须两个都是true才是true 如果前面是true 就没必要往后看了 直接返回后面的
+
+    //|| 要求比较宽松 只要有true就是true
+    console.log(true || true);//true
+    console.log(true || false);//true
+    console.log(false || true);//true
+    console.log(false || false);//false
+
+    //||运算 只要有true就是true 如果前面是true 就没必要往后看了 直接返回前面的
+    //||运算 只要有true就是true 如果前面是false 就没必要往后看了 直接返回后面的
+</script>
+</body>
+</html>

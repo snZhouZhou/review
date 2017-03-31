@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //将一个数组中的值从小到大排列
+    //var arr = [65, 97, 76, 13, 27, 49, 58];
+    /*var arr = [50, 40];//对这个数组进行排序 排序的结果是 从小到大
+     if (arr[0] > arr[1]) {
+     var temp = arr[0];
+     arr[0] = arr[1];
+     arr[1] = temp;
+     }
+     console.log(arr);*/
+
+    var arr = [65, 97, 76, 13, 27, 49, 58];
+    //双重for循环 外层循环控制的是 遍历的趟数 内层循环是对数组的遍历
+    //外层循环 5个元素比较4趟 arr.length个元素比较arr.length-1趟
+    for (var i = 0; i < arr.length - 1; i++) {//arr.length-1趟
+        //内层循环 5个元素比较4次 arr.length个元素比较arr.length-1次
+        for (var j = 0; j < arr.length - 1; j++) {//arr.length-1次
+            //实质性的进行两两比较
+            if (arr[j] > arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    console.log(arr);
+
+
+</script>
+</body>
+</html>

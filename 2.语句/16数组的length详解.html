@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*var arr = [];
+     console.log(arr);
+     console.log(arr.length);//0
+     arr[0] = 1;
+     console.log(arr);
+     console.log(arr.length);//1
+     arr[1] = 1;
+     console.log(arr);
+     console.log(arr.length);//2
+     //arr[2] = 1;
+     arr[arr.length] = 1;
+     arr[arr.length] = 1;
+     arr[arr.length] = 1;
+     arr[arr.length] = 1;
+     arr[arr.length] = 1;
+     arr[arr.length] = 1;*/
+    //console.log(arr);
+    //length属性是动态改变的 使用arr.length可以保证是追加元素
+    /*var arr = [];
+    for (var i = 1; i <= 10; i++) {
+        arr[arr.length] = i;
+    }
+    console.log(arr);*/
+    //length属性不但可以表示数组中元素的个数 而且对他进行改变真的可以影响到数组中元素的个数
+    var arr = [1, 2, 3, 4, 5];
+    console.log(arr);
+    console.log(arr.length);
+    arr.length = 2;
+    console.log(arr);
+    console.log(arr.length);
+    arr.length = 20;
+    console.log(arr);
+    console.log(arr.length);
+    console.log(arr[10]);
+    //变量声明了没赋值 值是undefined
+    //数组中的项目 如果没有赋值 值也是undefined
+
+
+
+
+
+</script>
+</body>
+</html>

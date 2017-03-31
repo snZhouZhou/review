@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //最常用的是toString()
+    var num = 3;
+    console.log(num);
+    console.log(num.toString());
+    var bool = true;
+    console.log(bool);
+    console.log(bool.toString());
+    //var a = null;
+    var a = undefined;
+    //console.log(a);
+    //console.log(a.toString());//null和undefined没有toString方法
+    //最通用的方法是String() 什么都能转
+    /*console.log(String(num));
+     console.log(String(bool));
+     console.log(String(a));*/
+    //隐式转换
+    var num = undefined;
+    var str = num + "";//既可以对类型进行转换 同时又不改变他原有的值
+
+    console.log(str);
+
+</script>
+</body>
+</html>

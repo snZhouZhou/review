@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var a = "100";
+    var b = 100;
+    //var c = a + b;
+    //console.log(c);//200 100100
+    //+ 数值相加 字符相连 只要有字符串就会做拼接
+    var c = a - b;//只有+有字符串操作的含义 其他-*/%都是算术运算
+    console.log(c);
+
+    //拼接字符串的小技巧
+    var d = new Date();
+    var minute = d.getMinutes();
+    var str = "现在时间是32分";
+    var str = "现在时间是" + "32分";
+    var str = "现在时间是" + "32" + "分";
+    var str = "现在时间是" + minute + "分";
+    var str = "现在时间是" + minute + "分";//逗逗加加
+    console.log(str);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    console.log([1, 2, 3, 4, 5]);
+    //把1-100之间所有的奇数，放到数组中
+    /*var arr = [];
+     for (var i = 1; i <= 100; i++) {
+     if (i % 2 !== 0) {//奇数
+     arr[i] = i;
+     }
+     }
+     console.log(arr);//稀疏数组*/
+    /*var arr = [];
+     var j = 0;
+     for (var i = 1; i <= 100; i++) {
+     if (i % 2 !== 0) {//奇数
+     arr[j] = i;
+     j++;
+     }
+     }
+     console.log(arr);*/
+    /*var arr = [];
+    var length = 0;
+    for (var i = 1; i <= 100; i++) {
+        if (i % 2 !== 0) {//奇数
+            arr[length] = i;
+            length++;
+        }
+    }
+    console.log(arr);*/
+    var arr = [];
+    //var length = 0;//其实没有必要再单独声明一个变量来记录索引
+    //现在是空数组 所以 arr.length 是0
+    for (var i = 1; i <= 100; i++) {
+        if (i % 2 !== 0) {//奇数
+            arr[arr.length] = i;
+            //length++;
+        }
+    }
+    console.log(arr);
+
+</script>
+</body>
+</html>

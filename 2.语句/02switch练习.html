@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //今天星期几
+    /*var week = new Date().getDay();//0-6
+     switch (week) {
+     case 0:
+     console.log("周日");
+     break;
+     case 1:
+     console.log("周1");
+     break;
+     case 2:
+     console.log("周2");
+     break;
+     case 3:
+     console.log("周3");
+     break;
+     case 4:
+     console.log("周4");
+     break;
+     case 5:
+     console.log("周5");
+     break;
+     case 6:
+     console.log("周6");
+     break;
+     }*/
+
+
+    //素质教育（把分数变成ABCDE）
+    //千万不要写100个case哟
+    //    var score = 100;
+    //     score = parseInt(score / 10);//93 9.3 9
+    //     switch (score) {
+    //     case 10:
+    //     console.log("A");
+    //     break;
+    //     case 9:
+    //     console.log("A");
+    //     break;
+    //     case 8:
+    //     console.log("B");
+    //     break;
+    //     case 7:
+    //     console.log("C");
+    //     break;
+    //     case 6:
+    //     console.log("D");
+    //     break;
+    //     default :
+    //     console.log("E");
+    //     }
+
+    //var score = 53;
+    //如果要和一个关系比较的表达式的返回值（也就是布尔值）做比较
+    //那么上面也应该是一个布尔值
+    /*switch (true) {
+     case score >= 60://true 下面这里是一个布尔值
+     console.log("及格了");
+     break;
+     default :
+     console.log("不及格");
+     }*/
+    //console.log(score >= 60);//true
+    //switch一般用于定值比较 不过也可以做范围比较 （但是不常用）
+
+    var score = 53;
+    switch (true) {
+        case score >= 90:
+            console.log("A");
+            break;
+        case score >= 80:
+            console.log("B");
+            break;
+        case score >= 70:
+            console.log("C");
+            break;
+        case score >= 60:
+            console.log("D");
+            break;
+        default :
+            console.log("E");
+    }
+
+</script>
+</body>
+</html>

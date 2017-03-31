@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //最通用的是Boolean()
+    /*console.log(Boolean(""));
+    console.log(Boolean(0));
+    console.log(Boolean(NaN));
+    console.log(Boolean(null));
+    console.log(Boolean(undefined));*/
+    //其他类型的值在流程控制语句中会做隐式转换
+    /*var msg;
+    if (msg) {
+        alert("有值");
+    } else {
+        alert("无值");
+    }*/
+    //
+    var str = "123";//让其他类型的值 参与逻辑运算 就可以转换成布尔值
+    console.log(!!str);
+
+</script>
+</body>
+</html>

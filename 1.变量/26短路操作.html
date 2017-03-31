@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //短路操作 返回的是 "最终决定" 表达式结果的那一项
+
+    //&& 要求比较严格 必须两个都是true才是true
+    console.log(true && true);//true
+    console.log("前面" && "后面");//"后面"
+    console.log(true && false);//false
+    console.log("前面" && "");//""
+    console.log(false && true);//false
+    console.log("" && "后面");//""
+    console.log(false && false);//false
+    console.log(null && "");//null
+    //|| 要求比较宽松 只要有true就是true
+    console.log(true || true);//true
+    console.log("前面" || "后面");//"前面"
+    console.log(true || false);//true
+    console.log("前面" || "");//"前面"
+    console.log(false || true);//true
+    console.log("" || "后面");//"后面"
+    console.log(false || false);//false
+    console.log("" || null);//null
+</script>
+</body>
+</html>

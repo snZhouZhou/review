@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*var str = "abc";
+     str = "123";
+     console.log(str);*///字符串的不可变性指的是内存中的不可变性
+
+    //字符串的不可变性 带来的后果 就是 大量拼接字符串非常消耗资源
+    var str = "123";
+    for (var i = 1; i <= 1000000; i++) {
+        str = str + "1";
+    }
+    console.log(str);
+    var str = 123;
+    /*for (var i = 1; i <= 10000000; i++) {
+     str = str + 1;
+     }
+     console.log(str);*/
+
+</script>
+</body>
+</html>
